@@ -1,0 +1,29 @@
+.block{
+	display: flex;
+}
+.button, .link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	min-width: 25px;
+	box-sizing: border-box;
+}
+.list{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	margin-right: 5px;
+	padding-left: 0;
+}
+.item{
+	margin-left: 5px;
+}
+.link{
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid black;
+}
+.link.active {
+	color: red;
+}

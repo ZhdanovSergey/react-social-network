@@ -1,0 +1,22 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: 
+  'h h'
+  'n m';
+}
+.header {
+  grid-area: h;
+}
+.navbar {
+  grid-area: n;
+}
+.main {
+  grid-area: m;
+}
