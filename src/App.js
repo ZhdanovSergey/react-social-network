@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route} from 'react-router-dom'
+import {HashRouter, Route} from 'react-router-dom'
 import {Provider, connect} from 'react-redux'
 import store from './redux/redux-store.js'
 import {initialize} from './redux/app-reducer'
@@ -63,11 +63,11 @@ let mdtp = {
 let AppContainer = connect(mstp, mdtp)(App);
 
 let AppWithRouter = (props) => (
-	<BrowserRouter>
+	<HashRouter>
 		<Provider store={store}>
 			<AppContainer />
 		</Provider>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default AppWithRouter;
